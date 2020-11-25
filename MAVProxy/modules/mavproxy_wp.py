@@ -836,7 +836,7 @@ class WPModule(mp_module.MPModule):
         elif args[0] == "list":
             self.wp_op = "list"
             self.master.waypoint_request_list_send()
-            self.master.waypoint_ack_send(0)  '''Flylogix'''
+            self.master.waypoint_ack_send(0) '''Flylogix'''
         elif args[0] == "save":
             if len(args) != 2:
                 print("usage: wp save <filename>")
